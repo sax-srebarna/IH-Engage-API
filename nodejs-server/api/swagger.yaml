@@ -24,7 +24,6 @@ paths:
       responses:
         200:
           description: "OK"
-          schema: {}
       x-swagger-router-controller: "Default"
   /ping:
     get:
