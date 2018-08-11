@@ -9,7 +9,6 @@ host: "virtserver.swaggerhub.com"
 basePath: "/Built-ID/Community/1.0.0"
 schemes:
 - "https"
-- "http"
 security:
 - application:
   - "read"
@@ -25,6 +24,7 @@ paths:
       responses:
         200:
           description: "OK"
+      security: []
       x-swagger-router-controller: "Default"
   /ping:
     get:
