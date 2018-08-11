@@ -5,11 +5,17 @@
  * Server example operation
  * This is an example opeartion to show how security is applied to the call.
  *
- * no response value expected for this operation
+ * returns List
  **/
 exports.exampleGET = function() {
   return new Promise(function(resolve, reject) {
-    resolve();
+    var examples = {};
+    examples['application/json'] = [ "{}", "{}" ];
+    if (Object.keys(examples).length > 0) {
+      resolve(examples[Object.keys(examples)[0]]);
+    } else {
+      resolve();
+    }
   });
 }
 
