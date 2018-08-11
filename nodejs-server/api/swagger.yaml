@@ -24,7 +24,6 @@ paths:
       responses:
         200:
           description: "OK"
-      security: []
       x-swagger-router-controller: "Default"
   /ping:
     get:
