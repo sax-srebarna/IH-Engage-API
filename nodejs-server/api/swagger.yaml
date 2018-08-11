@@ -9,6 +9,7 @@ host: "virtserver.swaggerhub.com"
 basePath: "/Built-ID/Community/1.0.0"
 schemes:
 - "https"
+- "http"
 security:
 - application:
   - "read"
